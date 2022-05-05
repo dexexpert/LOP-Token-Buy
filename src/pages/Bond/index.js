@@ -4,8 +4,6 @@ import styled from "styled-components";
 import { ethers } from "ethers";
 import benefitsAbi from "../../constants/abis/benefitsToken";
 import presaleAbi from "../../constants/abis/presale";
-import { useWeb3React } from "@web3-react/core";
-import logo from "../../assets/logos/benifiet.png";
 
 const SwapContainer = styled.div`
   background: linear-gradient(
@@ -94,7 +92,7 @@ export default function BondPage() {
           (buyUsdcAmount * exchangeRatio1 * 10 ** 3).toString()
         );
 
-        const receipt = await transaction.wait();
+        await transaction.wait();
         // console.log("receipt", receipt);
         alert("USDC have approved!");
         setUsdcflag(1);
@@ -128,7 +126,7 @@ export default function BondPage() {
         const transaction = await evotInstance.Buy(
           (buyUsdcAmount * 10 ** 18).toString()
         );
-        const receipt = await transaction.wait();
+        await transaction.wait();
         // console.log("receipt" + receipt);
         alert("USDC have bonded!");
         setUsdcflag(0);
@@ -153,7 +151,7 @@ export default function BondPage() {
     } else {
       setUsdcDisableBond(true);
     }
-  }, [buyUsdcAmount]);
+  }, [buyUsdcAmount, flagUsdc]);
 
   return (
     <>

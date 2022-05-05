@@ -1,6 +1,5 @@
 import "./App.css";
 
-import Header from "./containers/Header";
 import { InlineFooter } from "./containers/Footer";
 import React, { useState } from "react";
 import { Provider as ReduxProvider } from "react-redux";
@@ -33,27 +32,12 @@ function Modals() {
 }
 
 function App() {
-  const [rtl, setRtl] = useState(false);
   const [toggled, setToggled] = useState(false);
 
   const handleToggleSidebar = (value) => {
     setToggled(value);
   };
 
-  const styles = {
-    root: {
-      fontFamily: "sans-serif",
-      textAlign: "center",
-      height: "100vh",
-      background: "#162a43",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      position: "fixed",
-      top: "0px",
-      // left: "0"
-    },
-  };
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
       <ReduxProvider store={reduxStore}>
@@ -69,11 +53,7 @@ function App() {
               <FaBars size="1.5em" color="#35caa9" />
             </div>
           </div>
-          <Aside
-            rtl={rtl}
-            toggled={toggled}
-            handleToggleSidebar={handleToggleSidebar}
-          />
+          <Aside toggled={toggled} handleToggleSidebar={handleToggleSidebar} />
         </div>
         <div
           className="flex-grow relative flex flex-col items-center px-5 py-3 content"

@@ -1,27 +1,14 @@
-import { NavLink } from "react-router-dom";
 import {
   ProSidebar,
   Menu,
   MenuItem,
-  SubMenu,
   SidebarHeader,
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
-import {
-  FaTachometerAlt,
-  FaGem,
-  FaList,
-  FaGithub,
-  FaRegLaughWink,
-  FaHeart,
-} from "react-icons/fa";
 import "react-pro-sidebar/dist/css/styles.css";
-import { useHistory, useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import React from "react";
-import logo from "../assets/logos/Benifiet_logo.png";
-import styled from "styled-components";
 import usePath from "../hooks/usePath";
 
 // import {
@@ -33,22 +20,11 @@ import usePath from "../hooks/usePath";
 //   SidebarContent,
 //   SidebarFooter
 // } from "react-pro-sidebar";
-import {
-  SiElastic,
-  SiRedis,
-  SiHomeassistant,
-  SiDiscord,
-  SiGithub,
-  SiTwitter,
-  SiGitbook,
-  SiMedium,
-} from "react-icons/si";
-import { HiAdjustments } from "react-icons/hi";
+import { SiElastic } from "react-icons/si";
 
 const Aside = ({ rtl, toggled, handleToggleSidebar }) => {
   //   const intl = useIntl();
   const history = useHistory();
-  const location = useLocation();
 
   const headerStyle = {
     padding: "10px",
@@ -80,8 +56,6 @@ const Aside = ({ rtl, toggled, handleToggleSidebar }) => {
       icon: <SiElastic />,
     },
   ];
-
-  const socials = [];
 
   return (
     <ProSidebar
@@ -127,20 +101,6 @@ const Aside = ({ rtl, toggled, handleToggleSidebar }) => {
           </a>
         </div>
       </SidebarFooter> */}
-      <SidebarFooter>
-        <Menu iconShape="circle">
-          {socials.map((item, index) => (
-            <MenuItem
-              className="text-white text-sm font-medium flex items-center justify-center"
-              active={socials === item.path}
-              key={index}
-              icon={item.icon}
-            >
-              <a href={item.path}></a>
-            </MenuItem>
-          ))}
-        </Menu>
-      </SidebarFooter>
     </ProSidebar>
   );
 };
