@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --human-green: #3cd0b1;
+    --human-green-bright: #7adfca;
+    --human-green-highlight: #2aaf93;
+
+    --human-red: #FF4B33;
+
+    --human-purple: #ed63f6;
+    --human-purple-bright: #f5abfa;
+    --human-purple-highlight: #e51bf2;
+}
+
+:root {
+    --platform-primary: var(--human-green);
+    --platform-primary-bright: var(--human-green-bright);
+    --platform-primary-highlight: var(--human-green-highlight);
+
+    --platform-secondary: var(--human-purple);
+    --platform-secondary-bright: var(--human-purple-bright);
+    --platform-secondary-highlight: var(--human-purple-highlight);
+
+    --platform-danger: var(--human-red);
+
+    --platform-primary-button: linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%), var(--platform-primary);
+    --platform-primary-button-hover: linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%), var(--platform-primary-highlight);
+
+    --platform-secondary-button: linear-gradient(91.44deg, var(--platform-primary) -0.25%, var(--platform-secondary) 144.97%), linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%);
+    --platform-secondary-button-hover: linear-gradient(91.44deg, var(--platform-primary-highlight) -0.25%, var(--platform-secondary-highlight) 144.97%), linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%);
+
+    --platform-danger-button: linear-gradient(314.61deg, rgba(0, 0, 0, 0.3) -31.16%, rgba(255, 255, 255, 0.3) 136.93%), var(--platform-danger);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #4E555E;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.human-green {
+    background: var(--platform-primary-button);
+    background-blend-mode: soft-light, normal;
+    position: relative;
+}
+
+.btn.human-green:not([disabled]):hover {
+    background: var(--platform-primary-button-hover);
+    transform: scale(0.99);
+    transition: transform 450ms ease 0s;
+}
+
+.human-red {
+    background: var(--platform-danger-button);
+    background-blend-mode: soft-light, normal;
+    position: relative;
+}
+
+.human-colorful {
+    background: var(--platform-secondary-button);
+    background-blend-mode: soft-light, normal;
+    position: relative;
+}
+
+.btn.human-colorful:not([disabled]):hover {
+    background: var(--platform-secondary-button-hover);
+    background-blend-mode: soft-light, normal;
+    transform: scale(0.99);
+    transition: transform 450ms ease 0s;
+}
+
+.box-shadow {
+    box-sizing: border-box;
+    box-shadow: inset -2.5px -2.5px 5px #FAFBFF, inset 2.5px 2.5px 5px #A6ABBD;
+}
+
+.dark-box-shadow {
+    box-sizing: border-box;
+    box-shadow: -5px -5px 10px rgba(250, 251, 255, 0.1), 5px 5px 10px #35373E;
+}
+
+.icon-btn {
+    opacity: 0.6;
+}
+
+.icon-btn:hover {
+    opacity: 1;
+}
+
+.text-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.number-font {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.fade-in {
+    animation: fadein 0.5s;
+}
+
+.modal-content-fade {
+    animation: modaldrop 0.4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modaldrop {
+    from {
+        transform: translate(0px, 50px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}

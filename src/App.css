@@ -1,0 +1,209 @@
+.App {
+    text-align: center;
+    background: #30303d;
+    min-height: 100%;
+    position: absolute;
+}
+
+.App .DisplayBox {
+    max-width: 500px;
+}
+
+.App .Radials {
+    position: fixed;
+    width: 588px;
+    height: 576px;
+    opacity: 0.3;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    left: 50%;
+    top: 50%;
+}
+
+
+
+.sidebar-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px;
+  }
+  
+  .sidebar-btn {
+    padding: 1px 15px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #adadad;
+    text-decoration: none;
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .sidebar-btn span {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .pro-menu ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px !important;
+    margin-left: 20px !important;
+  }
+  /* .pro-item-content a {
+    color:white
+  } */
+
+  .pro-sidebar {
+    position: fixed !important;
+    height: 100vh;
+  }
+
+  .pro-sidebar  .pro-sidebar-inner{
+    background: #122032 !important;
+  }
+
+  .pro-sidebar-footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 0px !important;
+    
+  }
+
+  .pro-inner-item {
+    
+    padding: 8px !important;
+    
+  }
+
+  .pro-icon {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .progressBarFancyContainer {
+    width: 60% !important;
+    margin: auto;
+    font-size: 20px;
+  }
+
+  .progressBarFancyContainer .labelDarkTheme {
+    color: #44c42d !important;
+      }
+
+      .lagRadar {
+        position: fixed;
+        bottom: 0.5rem;
+        right: 0.5rem;
+      }
+
+.Collapsible {
+  padding: 5px;
+  width: 70%;
+  
+}
+
+.Collapsible__contentOuter {
+  background: linear-gradient(311.99deg, rgba(0, 0, 0, 0.3) -22.55%, rgba(255, 255, 255, 0.3) 131.34%), #2c2c3dcc;
+  background-blend-mode: soft-light, normal;
+  border-radius: 0px 0px 10px 10px;
+}
+.Collapsible__trigger {
+  cursor: pointer;
+  text-align: center;
+
+  position: block;
+  display: block;
+
+  height: 2rem;
+  line-height: 2rem;
+  /* padding-left: 3rem; */
+
+  /* background-color: black; UX/Mintgreen 12% */
+  color: #44c42d; /* Profil/Emeraldgreen */
+  font-size: 18px;
+
+  background: linear-gradient(311.99deg, rgba(0, 0, 0, 0.3) -22.55%, rgba(255, 255, 255, 0.3) 131.34%), #323343;
+  background-blend-mode: soft-light, normal;
+  border-radius:  10px 10px 0 0;
+}
+
+.Collapsible__trigger .is-open{
+  background: linear-gradient(311.99deg, rgba(0, 0, 0, 0.3) -22.55%, rgba(255, 255, 255, 0.3) 131.34%), #2c2c3dcc;
+  background-blend-mode: soft-light, normal;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8c968b; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #45a83b; 
+}
+
+
+
+@media screen and (max-width: 760px) {
+  .content {
+    margin: 0 !important
+
+  }
+
+  .bond-tag{
+    width: 70vw !important;
+  }
+
+  .bond-content{
+    flex-wrap: wrap;
+  }
+
+  .dashboard-card{
+    flex-wrap: wrap;
+  }
+
+  .bond-card {
+    width: 90% !important;
+    margin-bottom: 8vh;
+  }
+  .connect-button {
+    width: 40vw !important
+  }
+
+  .input {
+    width: 20vw !important;
+  }
+  .progressBarFancyContainer {
+    width: 80% !important;
+  }
+
+  .Collapsible {
+    width: 90%;
+    
+  }
+  .wallet {
+    top: 6vh
+  }
+ 
+}
+
+
