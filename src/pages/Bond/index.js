@@ -191,7 +191,7 @@ export default function BondPage() {
             BUY
           </span>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <p style={{ color: "#44c42d" }}>LOP $0.015</p>
+            <p style={{ color: "#44c42d" }}>LOP $2</p>
           </div>
           {/* <a href="https://www.w3schools.com" style={{ color: "#44c42d", fontSize: "20px", letterSpacing: "1.5px" }}>Overview</a>
 
@@ -235,7 +235,7 @@ export default function BondPage() {
                 >
                   {/* <p>Price Of BENIFIET:   <b>$18</b></p> */}
                   <p>
-                    You can exchange 0.015 USDC <br />
+                    You can exchange 2 USDC <br />
                     per 1 LOP
                   </p>
                 </div>
