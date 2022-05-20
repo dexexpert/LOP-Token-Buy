@@ -44,9 +44,7 @@ export default function WrongNetworkModal() {
       onClose={closeWrongNetworkModal}
       show={wrongNetworkModalOpen}
     >
-      <span className="text-white">
-        Please connect to Polygon Testnet Network.
-      </span>
+      <span className="text-white">Please connect to DBX Main Network.</span>
       <Button className="human-green mt-3" onClick={logout}>
         Logout
       </Button>

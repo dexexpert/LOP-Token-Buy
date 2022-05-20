@@ -3,7 +3,7 @@ import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 
 export const SUPPORTED_CHAINIDS = [
     // 56,
-    80001
+    5348
 ]
 
 export const injected = new InjectedConnector({})
@@ -22,7 +22,7 @@ export const walletconnect = new WalletConnectConnector({
 //TESTNET
 export const walletconnect = new WalletConnectConnector({
     rpc: {
-        97: 'https://data-seed-prebsc-1-s1.binance.org:8545'
+        5348: 'https://dbxnode.com/'
     },
     bridge: 'https://bridge.walletconnect.org',
     qrcode: true,

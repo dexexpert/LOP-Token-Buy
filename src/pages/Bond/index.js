@@ -53,8 +53,8 @@ const inputStyle = {
 export default function BondPage() {
   // const tokenAAddress = "0xA90761C369320567DB7d9C2667187c24de41735a";
   // const benefitsAbi = "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063";
-  const usdcToken = "0x418bD5B357B462fc02cc9dA1F353e251Cd3473c2";
-  const usdcBondAddress = "0x92844936AA71DA4a7e0b0fc5eDe3F6Ca72D0A066";
+  const usdcToken = "0x4F3112C962e0F600Dd5Bf90F928e29d263ea0A9A";
+  const usdcBondAddress = "0x62FBBdC1c94F7664d8c09D0D6747e860170F50e5";
 
   // --------------------------------------------------------------------------USDC-------------------------------------------------
 
