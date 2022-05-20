@@ -89,7 +89,7 @@ export default function BondPage() {
 
         const transaction = await tokenInstance.approve(
           usdcBondAddress,
-          (buyUsdcAmount * exchangeRatio1 * 10 ** 3).toString()
+          (buyUsdcAmount * exchangeRatio1 / 10000).toString()
         );
 
         await transaction.wait();
