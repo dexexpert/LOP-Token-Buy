@@ -123,7 +123,9 @@ export default function BondPage() {
           signer
         );
 
-        const transaction = await evotInstance.Buy(buyUsdcAmount.toString());
+        const transaction = await evotInstance.Buy(
+          (buyUsdcAmount * 10 ** 18).toString()
+        );
         await transaction.wait();
         // console.log("receipt" + receipt);
         alert("USDC have bonded!");
