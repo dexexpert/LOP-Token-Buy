@@ -77,7 +77,7 @@ export function InlineFooter({additionalClass, extra}) {
             onClick={toggleWalletModal}
 
             >
-              {balance} MATIC
+              {balance} DBX
               <div
                 className="rounded-3xl px-3 py-1 ml-3 flex items-center justify-center bg-gray-800"
                 style={{
